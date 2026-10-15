@@ -67,6 +67,40 @@
 
       .ring { position: absolute; border-radius: 50%; border: 3px solid var(--gold); }
       .disc { position: absolute; border-radius: 50%; background: var(--turq); }
+      .lux-frame { display: none; }
+
+      /* ---- background themes: set one class on #root. All themes drop the decorative circles. */
+      #root[class*="theme-"] .disc, #root[class*="theme-"] .ring, #root[class*="theme-"] .cell { display: none; }
+
+      /* A: studio sweep, soft top light and a quiet floor line */
+      #root.theme-a .paper, #root.theme-a #s4-broll {
+        background: radial-gradient(ellipse 75% 38% at 50% 16%, rgba(255,255,255,0.95), rgba(255,255,255,0) 70%),
+          linear-gradient(180deg, #fbf8f2 0%, #f2ece0 58%, #e6dcc9 58.25%, #efe7d9 100%) !important;
+      }
+      #root.theme-a .green-bg {
+        background: radial-gradient(ellipse 75% 38% at 50% 16%, rgba(92,160,128,0.45), rgba(0,0,0,0) 70%),
+          linear-gradient(180deg, #17503d 0%, #0f3629 58%, #0a281e 58.25%, #0d2f24 100%);
+      }
+
+      /* B: gold-veined marble with a thin gold frame */
+      #root.theme-b .paper, #root.theme-b #s4-broll { background: url(assets/marble-light.jpg) center / cover !important; }
+      #root.theme-b .green-bg {
+        background: linear-gradient(rgba(8, 30, 23, 0.25), rgba(8, 30, 23, 0.55)), url(assets/marble-dark.jpg) center / cover;
+      }
+      #root.theme-b .lux-frame { display: block; position: absolute; inset: 34px; border: 2px solid rgba(201, 164, 92, 0.85); }
+      #root.theme-b .lux-frame::after { content: ""; position: absolute; inset: 10px; border: 1px solid rgba(201, 164, 92, 0.55); }
+
+      /* C: champagne / emerald silk with diagonal light folds */
+      #root.theme-c .paper, #root.theme-c #s4-broll {
+        background: linear-gradient(115deg, rgba(255,255,255,0) 18%, rgba(255,255,255,0.8) 36%, rgba(255,255,255,0) 52%),
+          linear-gradient(115deg, rgba(255,255,255,0) 56%, rgba(255,255,255,0.5) 68%, rgba(255,255,255,0) 82%),
+          linear-gradient(160deg, #f4ecdf 0%, #e6d8bf 55%, #efe4d1 100%) !important;
+      }
+      #root.theme-c .green-bg {
+        background: linear-gradient(115deg, rgba(255,255,255,0) 18%, rgba(130,200,170,0.20) 36%, rgba(255,255,255,0) 52%),
+          linear-gradient(115deg, rgba(255,255,255,0) 56%, rgba(201,164,92,0.16) 68%, rgba(255,255,255,0) 82%),
+          linear-gradient(160deg, #0d3528 0%, #155443 50%, #0a2a20 100%);
+      }
     </style>
   </head>
   <body>
@@ -240,6 +274,7 @@
           </div>
         </div>
       </section>
+      <div class="lux-frame"></div>
     </div>
 
     <script>
