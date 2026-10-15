@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="ms">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1080, height=1920" />
+    <title>Iklan 60s - vitalminz</title>
+    <script src="vendor/gsap.min.js"></script>
+    <style>
+:root { --bg:#f6f1e7; --ink:#1d1d1f; --accent:#1b7f9e; }
+* { box-sizing: border-box; }
+html, body { margin:0; padding:0; background:var(--bg); }
+#root { position:relative; width:100%; height:100%; overflow:hidden; background:var(--bg); color:var(--ink); font-family: system-ui, "Helvetica Neue", Arial, sans-serif; }
+.bar { position:absolute; left:0; top:0; width:100%; height:18px; background:var(--accent); }
+.block { position:absolute; right:-120px; top:300px; width:620px; height:620px; background:var(--accent); opacity:.12; border-radius:50%; }
+.clip { position:absolute; inset:0; display:flex; flex-direction:column; justify-content:center; align-items:flex-start; padding:0 90px; }
+.kicker { font-size:44px; font-weight:700; letter-spacing:2px; text-transform:uppercase; color:var(--accent); margin:0 0 28px; }
+h1 { margin:0 0 36px; font-size:110px; line-height:1.05; font-weight:800; }
+p { margin:0 0 24px; font-size:50px; line-height:1.35; max-width:900px; }
+p.small { font-size:36px; color:#4a4a4f; }
+.foot { position:absolute; left:90px; bottom:90px; font-size:30px; color:#55555a; }
+</style>
+  </head>
+  <body>
+    <div id="root" data-composition-id="vitalminz" data-start="0" data-width="1080" data-height="1920" data-duration="60">
+      <div class="bar"></div>
+      <div class="block"></div>
+      <section id="s0" class="clip" data-start="0" data-duration="5">
+        <div class="kicker">Kenali</div>
+        <h1>Vitalminz MultiVitamin &amp; Mineral</h1>
+        <p class="small">dengan Ekstrak Ginseng Siberia Plus</p>
+      </section>
+      <section id="s1" class="clip" data-start="5" data-duration="20">
+        <div class="kicker">Untuk kesejahteraan harian</div>
+        <h1>Multivitamin dan mineral dengan ekstrak ginseng Siberia untuk menyokong kesejahteraan harian anda.</h1>
+        
+      </section>
+      <section id="s2" class="clip" data-start="25" data-duration="20">
+        <div class="kicker">Satu produk</div>
+        <h1>Vitamin dan mineral dalam satu kapsul.</h1>
+        <p class="small">Mudah diambil sebagai sebahagian daripada rutin harian anda.</p>
+      </section>
+      <section id="s3" class="clip" data-start="45" data-duration="10">
+        <div class="kicker">60 kapsul</div>
+        <h1>Dalam satu kotak.</h1>
+        
+      </section>
+      <section id="s4" class="clip" data-start="55" data-duration="5">
+        <div class="kicker">Dapatkan</div>
+        <h1>Di kedai farmasi berdekatan anda.</h1>
+        <p class="small">Baca label. Rujuk doktor atau ahli farmasi jika anda mempunyai keadaan kesihatan tertentu atau mengambil ubat tetap. Suplemen bukan pengganti diet seimbang.</p>
+      </section>
+      <div class="foot">Vitalminz MultiVitamin &amp; Mineral</div>
+    </div>
+    <script>
+      const tl = gsap.timeline({ paused: true });
+      tl.from("#s0 .kicker", { y: 30, opacity: 0, duration: 0.5, ease: "power2.out" }, 0.1);
+      tl.from("#s0 h1", { y: 60, opacity: 0, duration: 0.8, ease: "power3.out" }, 0.3);
+      tl.from("#s0 p", { opacity: 0, duration: 0.6, ease: "power1.out" }, 1.0);
+      tl.from("#s1 .kicker", { y: 30, opacity: 0, duration: 0.5, ease: "power2.out" }, 5.1);
+      tl.from("#s1 h1", { y: 60, opacity: 0, duration: 0.8, ease: "power3.out" }, 5.3);
+      tl.from("#s2 .kicker", { y: 30, opacity: 0, duration: 0.5, ease: "power2.out" }, 25.1);
+      tl.from("#s2 h1", { y: 60, opacity: 0, duration: 0.8, ease: "power3.out" }, 25.3);
+      tl.from("#s2 p", { opacity: 0, duration: 0.6, ease: "power1.out" }, 26.0);
+      tl.from("#s3 .kicker", { y: 30, opacity: 0, duration: 0.5, ease: "power2.out" }, 45.1);
+      tl.from("#s3 h1", { y: 60, opacity: 0, duration: 0.8, ease: "power3.out" }, 45.3);
+      tl.from("#s4 .kicker", { y: 30, opacity: 0, duration: 0.5, ease: "power2.out" }, 55.1);
+      tl.from("#s4 h1", { y: 60, opacity: 0, duration: 0.8, ease: "power3.out" }, 55.3);
+      tl.from("#s4 p", { opacity: 0, duration: 0.6, ease: "power1.out" }, 56.0);
+      window.__timelines["vitalminz"] = tl;
+    </script>
+  </body>
+</html>
