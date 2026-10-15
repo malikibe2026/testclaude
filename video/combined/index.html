@@ -101,10 +101,33 @@
           linear-gradient(115deg, rgba(255,255,255,0) 56%, rgba(201,164,92,0.16) 68%, rgba(255,255,255,0) 82%),
           linear-gradient(160deg, #0d3528 0%, #155443 50%, #0a2a20 100%);
       }
+
+      /* D: Health Lane blue silk — brand blue #293c8b and red #e12f28 taken from the logo */
+      #root.theme-d { --green: #293c8b; --gold: #e12f28; --turq: #3a52b0; --ivory: #f3f6fc; }
+      #root.theme-d .paper, #root.theme-d #s4-broll {
+        background: linear-gradient(115deg, rgba(255,255,255,0) 18%, rgba(255,255,255,0.85) 36%, rgba(255,255,255,0) 52%),
+          linear-gradient(115deg, rgba(255,255,255,0) 56%, rgba(255,255,255,0.55) 68%, rgba(255,255,255,0) 82%),
+          linear-gradient(160deg, #eef3fb 0%, #d9e2f3 55%, #e8eef9 100%) !important;
+      }
+      #root.theme-d .green-bg {
+        background: linear-gradient(115deg, rgba(255,255,255,0) 18%, rgba(150,175,240,0.22) 36%, rgba(255,255,255,0) 52%),
+          linear-gradient(115deg, rgba(255,255,255,0) 56%, rgba(225,47,40,0.10) 68%, rgba(255,255,255,0) 82%),
+          linear-gradient(160deg, #18256a 0%, #293c8b 50%, #121c4f 100%);
+      }
+      #root.theme-d .board { background-color: #fbfcff;
+        background-image: linear-gradient(rgba(41, 60, 139, 0.06) 1px, transparent 1px), linear-gradient(90deg, rgba(41, 60, 139, 0.06) 1px, transparent 1px); }
+      #root.theme-d .glow { background: radial-gradient(circle, rgba(170, 195, 255, 0.45) 0%, rgba(170, 195, 255, 0) 70%); }
+      #root.theme-d .card { box-shadow: 0 30px 60px rgba(41, 60, 139, 0.20); }
+      #root.theme-d .tape { background: rgba(225, 47, 40, 0.75); }
+      #root.theme-d .icon { box-shadow: 0 14px 30px rgba(41, 60, 139, 0.30); }
+      #root.theme-d #s6-logo { box-shadow: 0 0 0 5px #e12f28, 0 40px 80px rgba(0, 0, 0, 0.40) !important; }
+      #root.theme-d #s6-rays g { stroke: #ffffff; }
+      #root.theme-d #s6-txt .title { color: #ffffff !important; }
+      #root.theme-d #s6-txt .title::after { content: ""; display: block; width: 220px; height: 8px; margin: 22px auto 0; background: #e12f28; border-radius: 4px; }
     </style>
   </head>
   <body>
-    <div id="root" data-composition-id="healthlane" data-start="0" data-width="1080" data-height="1920" data-duration="60">
+    <div id="root" class="theme-d" data-composition-id="healthlane" data-start="0" data-width="1080" data-height="1920" data-duration="60">
 
       <!-- 0-6s: mix-media + 2.5D parallax -->
       <section id="s1" class="clip" data-start="0" data-duration="6.5">
