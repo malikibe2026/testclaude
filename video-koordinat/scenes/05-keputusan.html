@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="ms">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../fonts/plus-jakarta-sans.css">
+<link rel="stylesheet" href="../fonts/ibm-plex-mono.css">
+<link rel="stylesheet" href="../base.css">
+<link rel="stylesheet" href="../ui.css">
+<script src="../icons.js"></script>
+<script src="../motion.js"></script>
+<style>
+
+.panel { background:var(--bg-2); border:1px solid var(--line); border-radius:calc(var(--u)*1.8); padding:calc(var(--u)*3); }
+.slabel { font-size:var(--fs-label); font-weight:700; letter-spacing:.1em; text-transform:uppercase; color:var(--muted); margin:0 0 calc(var(--u)*1.4); }
+.logo { width:calc(var(--u)*9); height:calc(var(--u)*9); border-radius:calc(var(--u)*2.4); background:linear-gradient(135deg,var(--accent),var(--accent-2)); display:grid; place-items:center; color:#06210f; font-size:calc(var(--u)*5); }
+.safe.hudslot { align-content:start; justify-items:start; padding-top:calc(var(--u)*3); text-align:left; }
+.btn2 { display:inline-flex; align-items:center; gap:.6em; font-size:var(--fs-body); font-weight:600; padding:.6em 1.1em; border-radius:calc(var(--u)*1.2); border:1px solid var(--line); background:var(--surface-2); color:var(--fg); }
+.btn2.go { background:var(--accent); border-color:var(--accent); color:#06210f; }
+.mono { font-family:var(--mono); }
+
+.safe{align-content:center; padding-top:calc(var(--u)*24)}
+.panel{width:calc(var(--u)*142); justify-self:center}
+.cg{display:grid; grid-template-columns:1fr 1fr; gap:calc(var(--u)*1.6)}
+.cb{background:var(--surface-2); border:1px solid var(--line); border-radius:calc(var(--u)*1.2); padding:calc(var(--u)*1.8) calc(var(--u)*2.2)}
+.cl{font-size:var(--fs-label); font-weight:700; color:var(--muted); letter-spacing:.08em; text-transform:uppercase; display:flex; align-items:center; gap:.6em}
+.dot{width:.8em; height:.8em; border-radius:50%}
+.cv{font-family:var(--mono); font-size:calc(var(--u)*4.4); font-weight:600; margin-top:.2em}
+.addr{margin-top:calc(var(--u)*1.6)}
+.bar{height:calc(var(--u)*1.4); border-radius:999px; background:var(--line); margin-top:calc(var(--u)*1.2)}
+.arow .btn2{font-size:calc(var(--u)*2.7)}
+.arow{display:flex; flex-wrap:nowrap; gap:calc(var(--u)*1.4); margin-top:calc(var(--u)*2.2)}
+.note{margin-top:calc(var(--u)*1.6); font-size:var(--fs-label); color:var(--muted)}
+
+</style>
+</head>
+<body>
+<div class="bg" style="background:radial-gradient(ellipse 60% 40% at 10% 10%, rgba(74,222,128,.09), transparent 60%), radial-gradient(ellipse 50% 40% at 90% 85%, rgba(34,211,238,.08), transparent 60%), var(--bg)"></div>
+<main class="stage"><div class="safe">
+<div class="panel m" style="--in:rise; --t:.1s">
+<p class="slabel">Keputusan</p>
+<div class="cg">
+<div class="cb"><div class="cl"><span class="dot" style="background:var(--accent)"></span>Latitud</div><div class="cv" style="color:var(--accent)">x.xxxxxx</div></div>
+<div class="cb"><div class="cl"><span class="dot" style="background:var(--accent-2)"></span>Longitud</div><div class="cv" style="color:var(--accent-2)">xxx.xxxxxx</div></div>
+</div>
+<div class="cb addr"><div class="cl">Alamat disahkan oleh sistem</div><div class="bar" style="width:92%"></div><div class="bar" style="width:64%"></div></div>
+<div class="arow"><span class="btn2 m" style="--in:pop; --t:1.3s"><i data-icon="clipboard"></i>Salin Koordinat</span><span class="btn2 m" style="--in:pop; --t:1.55s"><i data-icon="copy"></i>Salin Semua</span><span class="btn2 m" style="--in:pop; --t:1.8s"><i data-icon="map"></i>Google Maps</span><span class="btn2 m" style="--in:pop; --t:2.05s"><i data-icon="navigation"></i>Waze</span></div>
+<p class="note">Nilai di atas ialah format contoh: enam tempat perpuluhan</p>
+</div></div></main>
+<header class="hud"><div class="safe hudslot">
+<p class="kicker m" style="--in:fade; --t:-0.2s"><b>04</b>Keputusan</p>
+<h1 class="title m" data-headline style="--in:rise; --t:-0.2s; max-width:none">Salin terus atau buka di peta</h1>
+</div></header>
+</body>
+</html>
