@@ -1,0 +1,36 @@
+{
+  "width": 1920,
+  "height": 1080,
+  "fps": 30,
+  "output": "out/video.mp4",
+  "scenes": [
+    {
+      "file": "scenes/01-hook.html",
+      "duration": 3
+    },
+    {
+      "file": "scenes/02-taip.html",
+      "duration": 4.8
+    },
+    {
+      "file": "scenes/03-singkatan.html",
+      "duration": 4
+    },
+    {
+      "file": "scenes/04-variasi.html",
+      "duration": 4
+    },
+    {
+      "file": "scenes/05-keputusan.html",
+      "duration": 4.5
+    },
+    {
+      "file": "scenes/06-sejarah.html",
+      "duration": 3.5
+    },
+    {
+      "file": "scenes/07-tutup.html",
+      "duration": 2.8
+    }
+  ]
+}

@@ -1,0 +1,184 @@
+{
+ "video": "/home/user/testclaude/video-q3/out/video.mp4",
+ "width": 1920,
+ "height": 1080,
+ "fps": 30,
+ "cuts": [
+  2.5,
+  6,
+  11,
+  15.5
+ ],
+ "plan": [
+  {
+   "scene": "01-hook",
+   "start": 0,
+   "end": 2.5,
+   "energy": 0.6,
+   "curve": [
+    [
+     0,
+     0.6
+    ]
+   ],
+   "in": null
+  },
+  {
+   "scene": "02-siap",
+   "start": 2.5,
+   "end": 6,
+   "energy": 0.6,
+   "curve": [
+    [
+     2.5,
+     0.6
+    ]
+   ],
+   "in": null
+  },
+  {
+   "scene": "03-fe",
+   "start": 6,
+   "end": 11,
+   "energy": 0.6,
+   "curve": [
+    [
+     6,
+     0.6
+    ]
+   ],
+   "in": null
+  },
+  {
+   "scene": "04-kod",
+   "start": 11,
+   "end": 15.5,
+   "energy": 0.6,
+   "curve": [
+    [
+     11,
+     0.6
+    ]
+   ],
+   "in": null
+  },
+  {
+   "scene": "05-tutup",
+   "start": 15.5,
+   "end": 19,
+   "energy": 0.6,
+   "curve": [
+    [
+     15.5,
+     0.6
+    ]
+   ],
+   "in": null
+  }
+ ],
+ "sound": {
+  "space": "room",
+  "fadeIn": 0.3,
+  "fadeOut": 0.8,
+  "bed": null,
+  "palette": "synth",
+  "key": "C major"
+ },
+ "bed": null,
+ "music": false,
+ "cues": [
+  {
+   "sound": "ticker",
+   "material": null,
+   "struck": null,
+   "src": null,
+   "intent": "count-up",
+   "layer": null,
+   "motif": false,
+   "target": "span",
+   "event": 3.2,
+   "start": 3.2,
+   "d": 1.2,
+   "params": {
+    "dur": 1.2
+   },
+   "volume": 1.06,
+   "energy": 0.6,
+   "tone": 0,
+   "pan": 0,
+   "space": 0.06,
+   "box": {
+    "l": 182.390625,
+    "t": 794.75,
+    "w": 179.46875,
+    "h": 118.2554931640625
+   },
+   "accents": null,
+   "file": "/root/.cache/motion-video/sfx/ticker-v0-d1200-f1a3049f.wav",
+   "sourceFile": "/root/.cache/motion-video/sfx/ticker-v0-d1200-f1a3049f.wav"
+  },
+  {
+   "sound": "ticker",
+   "material": null,
+   "struck": null,
+   "src": null,
+   "intent": "count-up",
+   "layer": null,
+   "motif": false,
+   "target": "span",
+   "event": 4.4,
+   "start": 4.4,
+   "d": 1,
+   "params": {
+    "dur": 1
+   },
+   "volume": 1.06,
+   "energy": 0.6,
+   "tone": 0,
+   "pan": 0,
+   "space": 0.06,
+   "box": {
+    "l": 1283.984375,
+    "t": 794.75,
+    "w": 299.765625,
+    "h": 117
+   },
+   "accents": null,
+   "file": "/root/.cache/motion-video/sfx/ticker-v1-d1000-8b6ce9c1.wav",
+   "sourceFile": "/root/.cache/motion-video/sfx/ticker-v1-d1000-8b6ce9c1.wav"
+  },
+  {
+   "sound": "thud",
+   "material": null,
+   "struck": null,
+   "src": null,
+   "intent": "soft-impact",
+   "layer": null,
+   "motif": false,
+   "target": "div.big.m",
+   "event": 15.5667,
+   "start": 15.5667,
+   "d": 0.3,
+   "params": {
+    "pitch": 1
+   },
+   "volume": 0.795,
+   "energy": 0.6,
+   "tone": 0,
+   "pan": 0,
+   "space": 0.25,
+   "box": {
+    "l": 885.859375,
+    "t": 318.75,
+    "w": 148.28125,
+    "h": 237.59375
+   },
+   "accents": null,
+   "file": "/root/.cache/motion-video/sfx/thud-v0-540d02b8.wav",
+   "sourceFile": "/root/.cache/motion-video/sfx/thud-v0-540d02b8.wav"
+  }
+ ],
+ "voice": [],
+ "fxStem": null,
+ "gainDb": 31.5796875
+}

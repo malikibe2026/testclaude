@@ -1,0 +1,377 @@
+<!doctype html>
+<html lang="ms" class="light">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../base.css">
+<link rel="stylesheet" href="../ui.css">
+<script src="../icons.js"></script>
+<script src="../motion.js"></script>
+<style>
+
+.grid338 { --cs:calc(var(--u)*2.3); --cg:calc(var(--u)*1.2); display:grid; grid-template-columns:repeat(26, var(--cs)); gap:var(--cg); justify-content:center; }
+.cell { width:var(--cs); height:var(--cs); border-radius:50%; background:#c3d0dc; }
+.cell.ok { background:var(--accent); }
+.cell.todo { background:var(--accent-2); }
+.card { background:var(--bg-2); border-radius:calc(var(--u)*2.2); box-shadow:0 calc(var(--u)*.6) calc(var(--u)*3) rgba(27,58,92,.10); }
+.warn { color:var(--warn-ink); }
+
+.safe { align-content:center; justify-items:center; gap:calc(var(--u)*4); }
+.kpis { display:grid; grid-template-columns:repeat(3,1fr); gap:calc(var(--u)*3); width:100%; max-width:calc(var(--u)*150); }
+.kpi { padding:calc(var(--u)*2.4) calc(var(--u)*3); display:grid; gap:.2em; justify-items:start; }
+.kpi .n { font-size:calc(var(--u)*9); font-weight:800; line-height:1; letter-spacing:-.03em; font-variant-numeric:tabular-nums; }
+.kpi .l { font-size:var(--fs-body); font-weight:600; color:var(--fg); }
+
+</style>
+</head>
+<body>
+<div class="bg"></div>
+<main class="stage"><div class="safe" style="padding-top:calc(var(--u)*23)">
+<div class="grid338" data-texture style="--cs:calc(var(--u)*1.9); --cg:calc(var(--u)*.9)"><i class="cell ok m" style="--in:pop; --t:-0.4s; --i:0; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:1; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:2; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:3; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:4; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:5; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:6; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:7; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:8; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:9; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:10; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:11; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:12; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:13; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:14; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:15; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:16; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:17; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:18; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:19; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:20; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:21; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:22; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:23; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:24; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:25; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:26; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:27; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:28; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:29; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:30; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:31; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:32; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:33; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:34; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:35; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:36; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:37; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:38; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:39; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:40; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:41; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:42; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:43; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:44; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:45; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:46; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:47; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:48; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:49; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:50; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:51; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:52; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:53; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:54; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:55; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:56; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:57; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:58; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:59; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:60; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:61; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:62; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:63; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:64; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:65; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:66; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:67; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:68; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:69; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:70; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:71; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:72; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:73; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:74; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:75; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:76; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:77; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:78; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:79; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:80; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:81; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:82; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:83; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:84; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:85; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:86; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:87; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:88; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:89; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:90; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:91; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:92; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:93; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:94; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:95; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:96; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:97; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:98; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:99; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:100; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:101; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:102; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:103; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:104; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:105; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:106; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:107; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:108; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:109; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:110; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:111; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:112; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:113; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:114; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:115; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:116; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:117; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:118; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:119; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:120; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:121; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:122; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:123; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:124; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:125; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:126; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:127; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:128; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:129; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:130; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:131; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:132; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:133; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:134; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:135; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:136; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:137; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:138; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:139; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:140; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:141; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:142; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:143; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:144; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:145; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:146; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:147; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:148; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:149; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:150; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:151; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:152; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:153; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:154; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:155; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:156; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:157; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:158; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:159; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:160; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:161; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:162; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:163; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:164; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:165; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:166; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:167; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:168; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:169; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:170; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:171; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:172; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:173; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:174; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:175; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:176; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:177; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:178; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:179; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:180; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:181; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:182; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:183; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:184; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:185; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:186; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:187; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:188; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:189; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:190; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:191; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:192; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:193; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:194; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:195; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:196; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:197; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:198; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:199; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:200; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:201; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:202; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:203; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:204; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:205; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:206; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:207; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:208; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:209; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:210; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:211; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:212; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:213; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:214; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:215; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:216; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:217; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:218; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:219; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:220; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:221; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:222; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:223; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:224; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:225; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:226; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:227; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:228; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:229; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:230; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:231; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:232; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:233; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:234; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:235; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:236; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:237; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:238; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:239; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:240; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:241; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:242; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:243; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:244; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:245; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:246; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:247; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:248; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:249; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:250; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:251; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:252; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:253; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:254; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:255; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:256; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:257; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:258; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:259; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:260; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:261; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:262; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:263; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:264; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:265; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:266; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:267; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:268; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:269; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:270; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:271; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:272; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:273; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:274; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:275; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:276; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:277; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:278; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:279; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:280; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:281; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:282; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:283; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:284; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:285; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:286; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:287; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:288; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:289; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:290; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:291; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:292; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:293; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:294; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:295; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:296; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:297; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:298; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:299; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:300; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:301; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:302; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:303; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:304; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:305; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:306; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:307; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:308; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:309; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:310; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:311; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:312; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:313; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:314; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:315; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:316; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:317; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:318; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:319; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:320; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:321; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:322; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:323; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:324; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:325; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:326; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:327; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:328; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell ok m" style="--in:pop; --t:-0.4s; --i:329; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell todo m" style="--in:pop; --t:-0.4s; --i:330; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell todo m" style="--in:pop; --t:-0.4s; --i:331; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell todo m" style="--in:pop; --t:-0.4s; --i:332; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell todo m" style="--in:pop; --t:-0.4s; --i:333; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell todo m" style="--in:pop; --t:-0.4s; --i:334; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell todo m" style="--in:pop; --t:-0.4s; --i:335; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell todo m" style="--in:pop; --t:-0.4s; --i:336; --stagger:0.0005s; --in-dur:.45s"></i>
+<i class="cell todo m" style="--in:pop; --t:-0.4s; --i:337; --stagger:0.0005s; --in-dur:.45s"></i></div>
+<div class="kpis">
+<div class="card kpi m" style="--in:rise; --t:.5s"><span class="n accent"><span data-count="330" data-at=".7" data-dur="1.2" data-ease="linear" data-sfx="ticker" data-sfx-intent="count-up">330</span></span><span class="l">kes berkod</span></div>
+<div class="card kpi m" style="--in:rise; --t:.65s"><span class="n warn"><span data-count="8" data-at=".85" data-dur="1.0">8</span></span><span class="l">belum keyin</span></div>
+<div class="card kpi m" style="--in:rise; --t:.8s"><span class="n accent"><span data-count="97.6" data-decimals="1" data-suffix="%" data-at="1.9" data-dur="1.0" data-ease="linear" data-sfx="ticker" data-sfx-intent="count-up">97.6%</span></span><span class="l">siap</span></div>
+</div></div></main>
+<header class="hud"><div class="safe" style="align-content:start; justify-items:start; padding-top:calc(var(--u)*3)">
+<p class="kicker m" style="--in:fade; --t:-0.2s"><b>00</b>Ringkasan</p>
+<h1 class="title m" data-headline style="--in:rise; --t:-0.2s; max-width:none">Hampir siap</h1>
+</div></header>
+</body>
+</html>
