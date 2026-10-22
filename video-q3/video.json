@@ -1,0 +1,28 @@
+{
+  "width": 1920,
+  "height": 1080,
+  "fps": 30,
+  "output": "out/video.mp4",
+  "scenes": [
+    {
+      "file": "scenes/01-hook.html",
+      "duration": 2.5
+    },
+    {
+      "file": "scenes/02-siap.html",
+      "duration": 3.5
+    },
+    {
+      "file": "scenes/03-fe.html",
+      "duration": 5
+    },
+    {
+      "file": "scenes/04-kod.html",
+      "duration": 4.5
+    },
+    {
+      "file": "scenes/05-tutup.html",
+      "duration": 3.5
+    }
+  ]
+}

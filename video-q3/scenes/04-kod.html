@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="ms" class="light">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../base.css">
+<link rel="stylesheet" href="../ui.css">
+<script src="../icons.js"></script>
+<script src="../motion.js"></script>
+<style>
+
+.grid338 { --cs:calc(var(--u)*2.3); --cg:calc(var(--u)*1.2); display:grid; grid-template-columns:repeat(26, var(--cs)); gap:var(--cg); justify-content:center; }
+.cell { width:var(--cs); height:var(--cs); border-radius:50%; background:#c3d0dc; }
+.cell.ok { background:var(--accent); }
+.cell.todo { background:var(--accent-2); }
+.card { background:var(--bg-2); border-radius:calc(var(--u)*2.2); box-shadow:0 calc(var(--u)*.6) calc(var(--u)*3) rgba(27,58,92,.10); }
+.warn { color:var(--warn-ink); }
+
+.safe { align-content:center; gap:calc(var(--u)*2.6); }
+.row { display:grid; grid-template-columns:calc(var(--u)*17) 1fr calc(var(--u)*11); align-items:center; gap:calc(var(--u)*2); }
+.who { font-size:var(--fs-body); font-weight:800; }
+.track { position:relative; height:calc(var(--u)*4); border-radius:calc(var(--u)*1); background:#dde6ee; overflow:hidden; }
+.seg { position:absolute; top:0; bottom:0; left:0; }
+.seg.ok { background:var(--accent); }
+.cnt { font-size:var(--fs-body); font-weight:800; text-align:right; }
+
+</style>
+</head>
+<body>
+<div class="bg"></div>
+<main class="stage"><div class="safe" style="padding-top:calc(var(--u)*12)">
+<div class="row">
+<span class="who m" style="--in:left; --t:0.4s">Kod 11</span>
+<div class="track"><div class="seg ok m" style="--in:grow-x; --t:0.45s; --in-dur:.9s; transform-origin:left; width:100.000%"></div></div>
+<span class="cnt m num" style="--in:fade; --t:1.0s">261</span>
+</div><div class="row">
+<span class="who m" style="--in:left; --t:0.68s">Kod 22</span>
+<div class="track"><div class="seg ok m" style="--in:grow-x; --t:0.7300000000000001s; --in-dur:.9s; transform-origin:left; width:16.092%"></div></div>
+<span class="cnt m num" style="--in:fade; --t:1.28s">42</span>
+</div><div class="row">
+<span class="who m" style="--in:left; --t:0.9600000000000001s">Kod 12</span>
+<div class="track"><div class="seg ok m" style="--in:grow-x; --t:1.01s; --in-dur:.9s; transform-origin:left; width:6.513%"></div></div>
+<span class="cnt m num" style="--in:fade; --t:1.56s">17</span>
+</div><div class="row">
+<span class="who m" style="--in:left; --t:1.2400000000000002s">Kod 31</span>
+<div class="track"><div class="seg ok m" style="--in:grow-x; --t:1.2900000000000003s; --in-dur:.9s; transform-origin:left; width:1.916%"></div></div>
+<span class="cnt m num" style="--in:fade; --t:1.8400000000000003s">5</span>
+</div><div class="row">
+<span class="who m" style="--in:left; --t:1.52s">Kod 40</span>
+<div class="track"><div class="seg ok m" style="--in:grow-x; --t:1.57s; --in-dur:.9s; transform-origin:left; width:1.149%"></div></div>
+<span class="cnt m num" style="--in:fade; --t:2.12s">3</span>
+</div><div class="row">
+<span class="who m" style="--in:left; --t:1.8000000000000003s">Kod 13</span>
+<div class="track"><div class="seg ok m" style="--in:grow-x; --t:1.8500000000000003s; --in-dur:.9s; transform-origin:left; width:0.900%"></div></div>
+<span class="cnt m num" style="--in:fade; --t:2.4000000000000004s">1</span>
+</div><div class="row">
+<span class="who m" style="--in:left; --t:2.08s">Kod 23</span>
+<div class="track"><div class="seg ok m" style="--in:grow-x; --t:2.13s; --in-dur:.9s; transform-origin:left; width:0.900%"></div></div>
+<span class="cnt m num" style="--in:fade; --t:2.68s">1</span>
+</div>
+</div></main>
+<header class="hud"><div class="safe" style="align-content:start; justify-items:start; padding-top:calc(var(--u)*3)">
+<p class="kicker m" style="--in:fade; --t:-0.2s"><b>02</b>Keputusan</p>
+<h1 class="title m" data-headline style="--in:rise; --t:-0.2s; max-width:none">Pecahan kod keputusan Q3</h1>
+</div></header>
+</body>
+</html>
